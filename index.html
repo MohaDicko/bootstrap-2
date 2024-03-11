@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Destination</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="produits">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="product">
+                    <img src="img/rolex.jpg" alt="Product Image">
+                    <h2>Rolex.</h2>
+                    <p>Description brève du produit 1</p>
+                    <button class="btn btn-primary">Acheter maintenant</button>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="product">
+                    <img src="img/Casio.jpg" alt="Product Image">
+                    <h2>Casio.</h2>
+                    <p>Description brève du produit 2</p>
+                    <button class="btn btn-primary">Acheter maintenant</button>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="product">
+                    <img src="img/Cartier.jpg" alt="Product Image">
+                    <h2>Cartier.</h2>
+                    <p>Description brève du produit 3</p>
+                    <button class="btn btn-primary">Acheter maintenant</button>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="product">
+                    <img src="img/audemars-piguet.jpg" alt="Product Image">
+                    <h2>Audemar-piguet.</h2>
+                    <p>Description brève du produit 4</p>
+                    <button class="btn btn-primary">Acheter maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="bg-light py-5"> <!-- Ajout de la section Contact avec arrière-plan clair et padding -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contactez-nous</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nom:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Entrez votre message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Adresse</h2>
+                <p>Médina</p>
+                <p>Rabat, Maroc</p>
+                <p>Email: contactdkwatch.com</p>
+                <p>Téléphone: +123456789</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class="text-center">
+    <p>© 2024 Dk-Shop. Tous droits réservés.</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
