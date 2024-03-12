@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de Destination</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-    <nav class="navbar navbar-default">
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#">Logo</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#produits">Produits</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
-            </div>
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 </header>
 
 <section id="produits">
@@ -60,7 +66,7 @@
             <div class="col-sm-3">
                 <div class="product">
                     <img src="img/audemars-piguet.jpg" alt="Product Image">
-                    <h2>Audemar-piguet.</h2>
+                    <h2 class="text-truncate">Audemar-piguet.</h2>
                     <p>Description brève du produit 4</p>
                     <button class="btn btn-primary">Acheter maintenant</button>
                 </div>
@@ -71,9 +77,9 @@
 <section id="contact" class="bg-light py-5"> <!-- Ajout de la section Contact avec arrière-plan clair et padding -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 p-3">
                 <h2>Contactez-nous</h2>
-                <form>
+                <form class=" mb-2 d-flex flex-column gap-4">
                     <div class="form-group">
                         <label for="name">Nom:</label>
                         <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
@@ -89,12 +95,16 @@
                     <button type="submit" class="btn btn-primary">Envoyer</button>
                 </form>
             </div>
-            <div class="col-md-6">
-                <h2>Adresse</h2>
-                <p>Médina</p>
-                <p>Rabat, Maroc</p>
-                <p>Email: contactdkwatch.com</p>
-                <p>Téléphone: +123456789</p>
+            <div class="col-md-6 p-3">
+                <div class=" mb-2 d-flex flex-column gap-4">
+                    <h2>Adresse</h2>
+                    <p>Médina</p>
+                    <p>Rabat, Maroc</p>
+                    <p>Email: contactdkwatch.com</p>
+                    <p>Téléphone: +123456789</p>
+
+                </div>
+
             </div>
         </div>
     </div>
@@ -104,9 +114,7 @@
     <p>© 2024 Dk-Shop. Tous droits réservés.</p>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
 
